@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: darkcyan;
+}
+.main{
+    height: 500px;
+    width: 1000px;
+    margin: 200px auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+ 
+}
+.nav{
+    width: 210px;
+    margin: -150px auto;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 255, 0);
+    color: white;
+}

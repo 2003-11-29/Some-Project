@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #277787;
+}
+.box{
+    height: auto;
+    width: 60%;
+    margin: 300px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.ques{
+    font-size: 30px;
+    font-weight: 700;
+    /* height: 150px; */
+    padding: 25px 0;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.option{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.check{
+    margin-left: 10px;
+    padding: 20px;
+}
+.submit{
+    padding: 20px 0;
+    background-color: #33004B;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

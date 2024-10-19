@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="headertext">
+                <h2>Weather App</h2>
+                <p>Home</p>
+                <p>About This Page</p>
+                <p>Uses Guide</p>
+            </div>
+            <div class="searchbox">
+                <input type="text" class="search" placeholder="Search City here...">
+            </div>
+            <button class="btn">Sign Up</button>
+
+        </div>
+        <div class="container">
+            <div class="cityName">
+              <div  id="image"><img style="width: 150px; height: 150px;" id="weather-icon" src="" alt=""></div>
+                <h3 id="update">Weather now <span id="cityName"></span> is <span id="WCondition" ></span></h3>
+            </div>
+            <div class="hero">
+                <div class="box">
+                    <div class="box-heading">
+                        <h3>Temperatue</h3>
+                    </div>
+                    <div class="para">
+                        <p class="temp"><span id="temp2"></span> ℃</p>
+                        <p>Country : <span id="temp_max"></span></p>
+                        <p>Temperatue is <span id="temp"></span> ℃</p>
+                        <p>Heat Index is  <span id="temp_min"></span></p>
+                    </div>
+                    <a href="#">more info...</a>
+                </div>
+                <div class="box">
+                    <div class="box-heading">
+                        <h3>Humidity info</h3>
+
+                    </div>
+                    <div class="para">
+                        <p class="temp"><span id="humidity2"></span> %</p>
+                        <p>Feels_like in  <span id="feels_like"></span></p>
+                        <p>Pressure is  <span id="pressure"></span></p>
+                        <p>Humidity is  <span id="humidity"></span> %</p>
+                    </div>
+                    <a href="#">more info...</a>
+                    <!-- <button></button> -->
+                </div> 
+                <div class="box">
+                    <div class="box-heading">
+                        <h3>Wind info</h3>
+                    </div>
+                    <div class="para">
+                        <p class="temp"><span id="speed2"></span> Km/h</p>
+                        <p>Wind Direction is  <span id="sea_level"></span></p>
+                        <p>Wind Temperature is <span id="grnd_level"></span> ℃</p>
+                        <p>Wind Speed ic is  <span id="speed"></span> km/h</p>
+
+                    </div>
+                    <a href="#">more info...</a>
+                    <!-- <button></button> -->
+                </div>
+
+            </div>
+            <div class="cityName" style="margin-top: 40px;">
+                <h2>Weather of other common place</h2>
+                <table class="table text-center"
+                style=" height: 230px;" border="1">
+                    <thead>
+                      <tr style="font-size: 22px;">
+                        <th style="width: 10%; color: deeppink;">City</th>
+                        <th style="width: 8%;">Country</th>
+                        <th style="width: 8%;">Cloud</th>
+                        <th style="width: 8%;">Weather</th>
+                        <th style="width: 8%;">Temp</th>
+                        <th style="width: 8%;">HeatIndex</th>
+                        <th style="width: 8%;">Pressure</th>
+                        <th style="width: 8%;">Humidity</th>
+                        <th style="width: 8%;">Feels_like</th>
+                        <th style="width: 8%;">Wind Speed</th>
+                        <th style="width: 8%;">Wind Temperature</th>
+                        <th style="width: 8%;">Wind Direction</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="font-size: 18px;">
+                        <th style="font-size: 22px; padding: 10px 0;" scope="row" class="text-start">Dubai</th>
+                        <td><span id="Dcountry"></span></td>
+                        <td><span id="Dcloud"></span></td>
+                        <td><span id="Dweather"></span></td>
+                        <td><span id="Dtemp"></span></td>
+                        <td><span id="Dheatindex"></span></td>
+                        <td><span id="Dpressure"></span></td>
+                        <td><span id="Dhumidity"></span></td>
+                        <td><span id="Dfeels_like"></span></td>
+                        <td><span id="Dwindspeed"></span></td>
+                        <td><span id="Dwindtemp"></span></td>
+                        <td><span id="Dwindder"></span></td>
+                      </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr style="font-size: 18px;">
+                          <th style="font-size: 22px; padding: 10px 0;" scope="row" class="text-start">London</th>
+                          <td><span id="Lcountry"></span></td>
+                          <td><span id="Lcloud"></span></td>
+                          <td><span id="Lweather"></span></td>
+                          <td><span id="Ltemp"></span></td>
+                          <td><span id="Lheatindex"></span></td>
+                          <td><span id="Lpressure"></span></td>
+                          <td><span id="Lhumidity"></span></td>
+                          <td><span id="Lfeels_like"></span></td>
+                          <td><span id="Lwindspeed"></span></td>
+                          <td><span id="Lwindtemp"></span></td>
+                          <td><span id="Lwindder"></span></td>
+                        </tr>
+  
+                      </tbody>
+                      <tbody>
+                        <tr style="font-size: 18px;">
+                          <th style="font-size: 22px; padding: 10px 0;" scope="row" class="text-start">New York</th>
+                          <td><span id="Ncountry"></span></td>
+                          <td><span id="Ncloud"></span></td>
+                          <td><span id="Nweather"></span></td>
+                          <td><span id="Ntemp"></span></td>
+                          <td><span id="Nheatindex"></span></td>
+                          <td><span id="Npressure"></span></td>
+                          <td><span id="Nhumidity"></span></td>
+                          <td><span id="Nfeels_like"></span></td>
+                          <td><span id="Nwindspeed"></span></td>
+                          <td><span id="Nwindtemp"></span></td>
+                          <td><span id="Nwindder"></span></td>
+                        </tr>
+  
+                      </tbody>
+                      <tbody>
+                        <tr style="font-size: 18px;">
+                          <th style="font-size: 22px; padding: 10px 0;" scope="row" class="text-start">Maxico</th>
+                          <td><span id="Mcountry"></span></td>
+                          <td><span id="Mcloud"></span></td>
+                          <td><span id="Mweather"></span></td>
+                          <td><span id="Mtemp"></span></td>
+                          <td><span id="Mheatindex"></span></td>
+                          <td><span id="Mpressure"></span></td>
+                          <td><span id="Mhumidity"></span></td>
+                          <td><span id="Mfeels_like"></span></td>
+                          <td><span id="Mwindspeed"></span></td>
+                          <td><span id="Mwindtemp"></span></td>
+                          <td><span id="Mwindder"></span></td>
+                        </tr>
+  
+                      </tbody>
+                      <tbody>
+                        <tr style="font-size: 18px;">
+                          <th style="font-size: 22px; padding: 10px 0;" scope="row" class="text-start">Paris</th>
+                          <td><span id="Pcountry"></span></td>
+                          <td><span id="Pcloud"></span></td>
+                          <td><span id="Pweather"></span></td>
+                          <td><span id="Ptemp"></span></td>
+                          <td><span id="Pheatindex"></span></td>
+                          <td><span id="Ppressure"></span></td>
+                          <td><span id="Phumidity"></span></td>
+                          <td><span id="Pfeels_like"></span></td>
+                          <td><span id="Pwindspeed"></span></td>
+                          <td><span id="Pwindtemp"></span></td>
+                          <td><span id="Pwindder"></span></td>
+                        </tr>
+  
+                      </tbody>
+            
+                    
+                  </table>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
